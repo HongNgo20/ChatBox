@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hongerrr Cord</title>
+  <link rel="stylesheet" type="text/css" href="../../styleindex.css">   
+</head>
+<body>
+
+ <h1 class="display-4">Welcome to HongerrrCord</h1>
+
+ <div id="messages">
+ <% for (let i=0; i<messages.length; i++){%>
+   
+  <div class="message"> 
+    <%= messages[i].name%> ; <%= messages[i].message%>
+    <form action="/messenger/<%=messages[i]._id%>?_method=DELETE" method="POST">
+      <button id="delete" class="btn btn-success">Delete</button>
+    </form>
+    <a href="/messenger/<%=messages[i]._id%>/edit">Edit</a>
+  </div>
+  <%}%> 
+
+  <br>
+  <form method="Post" action="/messenger">
+  <input name = "name" class="form-control" placeholder="Name:"><br>
+  <input name = "message" class="form-control" placeholder="Your Message Here">
+  </input>
+ <br>
+  <button id="send" class="btn btn-success">Send</button>
+ </form>
+ <br>
+</div>
+</div>
+
+</div>                
+</div>
+</div>       
+<br>
+
+</div>
+</div>
+
+
+</body>
+</html>

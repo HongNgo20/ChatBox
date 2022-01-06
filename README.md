@@ -5,11 +5,11 @@ App Idea:
 An app to communicate with friends and family online. 
 
 Unit 2's Project for General Assembly's SEI course.
-Need to build a fully functional CRUD app using JS
+Need to build a fully functional CRUD App. 
 
 Technologies Used
 Server side: ES6, Node.js, Express
-Database: MongoDB Atlas
+Database: MongoDB
 Front end: HTML, CSS, Javascript
 Tools: Git, GitHub, Heroku
 
